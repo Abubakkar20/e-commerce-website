@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- css file -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/account.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/produts.css">
+        <link rel="stylesheet" href="css/product-details.css">
+        <link rel="stylesheet" href="css/media.css">
+        <!-- google-fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,700&display=swap" rel="stylesheet">
+        <title>My account| E-commerce Website </title>
+    </head>
+    <body>
+    <!----------- header section ------------>
+       
+            <div class="container">
+                <!-- navbar -->
+                <div class="navbar">
+                    <div class="logo">
+                       <a href="index.html"> <img src="img/logo.png" width="125px"> </a>
+                    </div>
+                    <nav>
+                        <ul id="menuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Product</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="img/cart.png" width="30px" height="30px"></a>
+                    <!-- for mobile device -->
+                    <img src="img/menu.png" class="menu-icon" onclick="menutoggl()">
+                </div>
+            </div>
+        
+<!----------------- account page ----------------->
+
+               <div class="account-page">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-2">
+                               <img src="img/image1.png" width="100%">
+                           </div>
+                           <div class="col-2">
+                               <div class="form-container">
+                                   <div class="form-btn">
+                                       <span onclick="login()">Login</span>
+                                       <span onclick="register()">Register</span>
+                                       <hr id="idicator">
+                                   </div>
+                                   <form id="loginForm">
+                                       <input type="text" placeholder="Username">
+                                       <input type="password" placeholder="Password">
+                                       <button type="submit" class="btn">Login</button>
+                                       <a href="">Forgot password</a>
+                                   </form>
+                                   <form id="RegForm">
+                                    <input type="text" placeholder="Username">
+                                    <input type="email" placeholder="Email">
+                                    <input type="password" placeholder="Password">
+                                    <button type="submit" class="btn">Register</button>
+                                </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+
+<!--------------- footer section ---------------->
+   
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quisquam!</p>
+                        <div class="app-logo">
+                            <img src="img/play-store.png">
+                            <img src="img/app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                       <img src="img/logo-white.png">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, quisquam!</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div> 
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2021 - Abu Bakar</p>
+            </div>
+        </div>
+
+        <!-- js file -->
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="js/main.js" ></script>
+    </body>
+</html>
